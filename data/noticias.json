@@ -1,0 +1,28 @@
+[{
+        "titulo": "Nueva Actualización de Producto: ¡Más Funcionalidades!",
+        "fecha": "2025-07-20",
+        "contenido": "Hemos lanzado una emocionante actualización para nuestro producto estrella, incorporando nuevas características y mejoras de rendimiento que te encantarán."
+    },
+    {
+        "titulo": "Participación en la Conferencia Tecnológica Anual",
+        "fecha": "2025-07-15",
+        "contenido": "Nuestro equipo estará presente en la Conferencia Tecnológica anual para compartir nuestras últimas innovaciones y conectar con la comunidad. ¡Te esperamos!"
+    },
+    {
+        "titulo": "Consejos para Optimizar tu Flujo de Trabajo Diario",
+        "fecha": "2025-07-10",
+        "contenido": "Descubre nuestros mejores consejos y trucos para aumentar tu productividad y eficiencia en el día a día, aplicando metodologías probadas."
+
+    },
+    {
+        "titulo": "Innovación en Inteligencia Artificial: Próximos Pasos",
+        "fecha": "2025-07-05",
+        "contenido": "Estamos explorando nuevas fronteras en inteligencia artificial para ofrecer soluciones aún más inteligentes y personalizadas a nuestros clientes."
+    },
+    {
+        "titulo": "Expansión Global: Abriendo Nuevas Oficinas",
+        "fecha": "2025-06-28",
+        "contenido": "Con gran entusiasmo anunciamos la apertura de nuestras nuevas oficinas en mercados internacionales, fortaleciendo nuestra presencia global.",
+        "link": "//www.expansion.com/empresas/2024/09/23/66ee8f59e5fdea846e8b4574.html"
+    }
+]

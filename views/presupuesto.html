@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Presupuesto</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <header>
+        <img id="logo" src="https://cdn.leonardo.ai/users/05b1ea86-dbf8-40ac-b3ac-8fe4d221bdb5/generations/10c2f07f-15c3-4e28-a604-9d2895bad0cf/Leonardo_Phoenix_09_create_a_modern_logo_design_for_a_web_buil_3.jpg" alt="Logotipo de mi sitio web">
+        <nav>
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="../views/galeria.html">Galería</a></li>
+                <li><a href="../views/presupuesto.html">Presupuesto</a></li>
+                <li><a href="../views/contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="budget-form-section">
+            <h2>Calcula el Costo de tu Proyecto</h2>
+            <form id="budgetForm">
+                <!-- Parte 1: Datos de Contacto -->
+                <h3>Datos de Contacto</h3>
+                <div class="form-group">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required maxlength="15" placeholder="Tu nombre">
+                    <span class="error-message" id="error-nombre"></span>
+                </div>
+                <div class="form-group">
+                    <label for="apellidos">Apellidos:</label>
+                    <input type="text" id="apellidos" name="apellidos" required maxlength="40" placeholder="Tus apellidos">
+                    <span class="error-message" id="error-apellidos"></span>
+                </div>
+                <div class="form-group">
+                    <label for="telefono">Teléfono de Contacto:</label>
+                    <input type="tel" id="telefono" name="telefono" required maxlength="9" placeholder="Ej: 612345678">
+                    <span class="error-message" id="error-telefono"></span>
+                </div>
+                <div class="form-group">
+                    <label for="email">Correo Electrónico:</label>
+                    <input type="email" id="email" name="email" required placeholder="ejemplo@dominio.com">
+                    <span class="error-message" id="error-email"></span>
+                </div>
+
+                <!-- Parte 2: Presupuesto -->
+                <h3>Opciones de Presupuesto</h3>
+                <div class="form-group">
+                    <label for="producto">Producto/Servicio:</label>
+                    <select id="producto" name="producto" required>
+                        <option value="">-- Selecciona una opción --</option>
+                        <option value="web_basica" data-price="500">Sitio Web Básico (€500)</option>
+                        <option value="web_avanzada" data-price="1200">Sitio Web Avanzado (€1200)</option>
+                        <option value="app_movil" data-price="2500">Desarrollo App Móvil (€2500)</option>
+                        <option value="consultoria" data-price="300">Consultoría por Hora (€300)</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="plazo">Plazo de Entrega (días/meses):</label>
+                    <input type="number" id="plazo" name="plazo" min="1" value="1" required>
+                    <small>Se aplicará un descuento según el plazo.</small>
+                </div>
+                <div class="form-group">
+                    <label>Extras Adicionales:</label><br>
+                    <input type="checkbox" id="extra_seo" name="extras" value="seo" data-price="150">
+                    <label for="extra_seo">Optimización SEO (€150)</label><br>
+                    <input type="checkbox" id="extra_mantenimiento" name="extras" value="mantenimiento" data-price="200">
+                    <label for="extra_mantenimiento">Mantenimiento Anual (€200)</label><br>
+                    <input type="checkbox" id="extra_soporte" name="extras" value="soporte" data-price="75">
+                    <label for="extra_soporte">Soporte Premium (€75)</label>
+                </div>
+
+                <div class="form-group final-budget">
+                    <p>Presupuesto Final Estimado: <span id="presupuesto-final">€0.00</span></p>
+                </div>
+
+                <!-- Condiciones y Envío -->
+                <div class="form-group">
+                    <input type="checkbox" id="condiciones" name="condiciones" required>
+                    <label for="condiciones">Acepto las <a href="#" target="_blank">condiciones de privacidad</a></label>
+                    <span class="error-message" id="error-condiciones"></span>
+                </div>
+
+                <div class="form-actions">
+                    <button type="submit" id="submitBtn">Enviar Presupuesto</button>
+                    <button type="reset" id="resetBtn">Restablecer Formulario</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>Direccion:Calle de Camarena #226 - Madrid</p>
+        <p>Telefono:+34633432858</p>
+        <p>Aviso Legal</p>
+
+
+        <a href="https://www.facebook.com/MetaEspana/?brand_redir=108824017345866#" target="blank">
+            <img src="https://cdn-icons-png.flaticon.com/128/4494/4494464.png" alt="facebook" width="30">
+        </a>
+        <a href="https://www.instagram.com/Meta" target="blank">
+            <img src="https://cdn-icons-png.flaticon.com/128/1384/1384015.png" alt="instagram" width="30">
+        </a>
+        <a href="https://www.whatsapp.com/" target="blank">
+            <img src="https://cdn-icons-png.flaticon.com/128/1384/1384023.png" alt="whatsapp" width="30">
+        </a>
+        <p>&copy; 2025 Mi Sitio Web. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="../js/presupuesto.js"></script>
+</body>
+
+</html>

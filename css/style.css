@@ -1,0 +1,598 @@
+/* Estilos generales para todo el sitio */
+
+#logo {
+    width: 300px;
+    height: auto;
+    opacity: 0.8;
+    transform: scale(0.8);
+    justify-items: center;
+    margin: 10px 0;
+    border-radius: 10px;
+    background-image: url('https://cdn.leonardo.ai/users/05b1ea86-dbf8-40ac-b3ac-8fe4d221bdb5/generations/fd111929-b4f8-4188-87da-4ce1eca09cf1/Leonardo_Phoenix_09_Create_a_highresolution_background_image_f_1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    background-image: url('https://cdn.leonardo.ai/users/05b1ea86-dbf8-40ac-b3ac-8fe4d221bdb5/generations/fd111929-b4f8-4188-87da-4ce1eca09cf1/Leonardo_Phoenix_09_Create_a_highresolution_background_image_f_1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    text-decoration: dotted;
+}
+
+#map {
+    height: 400px;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    width: auto;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Encabezado del sitio */
+
+header {
+    color: #fff;
+    padding: 1em 0;
+    text-align: center;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+    opacity: 10;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+
+/* Navegación principal */
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    background-color: #80b0d2;
+    gap: 10px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 10px 10px rgba(232, 225, 225, 0.02);
+    /* Espacio entre los elementos del menú */
+}
+
+nav ul li a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1em;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    backdrop-filter: blur(8px);
+    filter: drop-shadow(0 8px 4px rgb(0, 0, 0, 0.1));
+}
+
+nav ul li a:hover {
+    background-color: #699acb;
+    /* Un tono más claro al pasar el ratón */
+    transform: translateY(-2px);
+}
+
+
+/* Contenido principal */
+
+main {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 30px auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.galery-gif {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    border: 2px solid #999595;
+    margin: 5px;
+    border-radius: 5px;
+    justify-items: center;
+    /*background-image: url("https://i.gifer.com/DXKh.gif");*/
+    justify-content: center;
+    object-fit: contain;
+}
+
+
+/* Estilos para las secciones */
+
+section {
+    margin-bottom: 40px;
+    padding: 25px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    text-decoration: dotted;
+    text-decoration: dotted;
+}
+
+section h2 {
+    color: #34495e;
+    font-size: 2em;
+    margin-top: 0;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #3498db;
+    /* Línea decorativa */
+    padding-bottom: 10px;
+    text-decoration: dotted;
+}
+
+
+/* Pie de página */
+
+footer {
+    text-align: center;
+    padding: 20px;
+    color: black;
+    margin-top: 10px;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+    background-image: url('https://cdn.leonardo.ai/users/05b1ea86-dbf8-40ac-b3ac-8fe4d221bdb5/generations/fd111929-b4f8-4188-87da-4ce1eca09cf1/Leonardo_Phoenix_09_Create_a_highresolution_background_image_f_1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    text-decoration: dotted;
+}
+
+
+/* --- Estilos de la sección de noticias (index.html) --- */
+
+#news-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    /* Columnas responsivas */
+    gap: 25px;
+    margin-top: 20px;
+    transform: matrix(0.5 ease-in-out);
+    text-decoration: dotted;
+}
+
+.news-item {
+    padding: 20px;
+    border: 1px solid #535050;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-decoration: dotted;
+}
+
+.news-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+    text-decoration: dotted;
+}
+
+.news-item h3 {
+    color: #3498db;
+    /* Azul vibrante */
+    margin-top: 0;
+    font-size: 1.4em;
+    margin-bottom: 10px;
+    text-decoration: dotted;
+}
+
+.news-date {
+    font-size: 0.9em;
+    color: #7f8c8d;
+    /* Gris para la fecha */
+    margin-bottom: 15px;
+    display: block;
+    /* Para que ocupe su propia línea */
+}
+
+.news-item p {
+    font-size: 1em;
+    color: #555;
+}
+
+
+/* --- Estilos de la galería (galeria.html) --- */
+
+#gallery-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+.gallery-thumbnail {
+    width: 180px;
+    /* Tamaño fijo para miniaturas */
+    height: 130px;
+    object-fit: cover;
+    /* Asegura que la imagen cubra el área */
+    cursor: pointer;
+    border: 3px solid #ddd;
+    border-radius: 8px;
+    transition: transform 0.2s ease-in-out, border-color 0.2s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.gallery-thumbnail:hover {
+    transform: scale(1.05);
+    border-color: #b7d8ee;
+    /* Borde azul al pasar el ratón */
+}
+
+.gallery-controls {
+    text-align: right;
+    margin-top: 20px;
+}
+
+.gallery-controls button {
+    padding: 12px 25px;
+    margin: 0 10px;
+    background-color: #91a9b9;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1em;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.gallery-controls button:hover {
+    background-color: #2980b9;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+
+/* Modal de la galería */
+
+.modal {
+    display: none;
+    /* Oculto por defecto */
+    position: fixed;
+    /* Permanece en su lugar */
+    z-index: 1000;
+    /* Sitúa encima de todo */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Ancho completo */
+    height: 100%;
+    /* Alto completo */
+    overflow: auto;
+    /* Habilitar scroll si es necesario */
+    background-color: rgba(0, 0, 0, 0.9);
+    /* Negro con opacidad */
+    padding-top: 60px;
+    /* Espacio para el botón de cerrar */
+}
+
+
+/* Estilos para los botones de navegación dentro del modal */
+
+.modal-nav-btn {
+    position: absolute;
+    /* Posiciona el botón sobre el modal */
+    top: 50%;
+    /* Lo alinea a la mitad del contenedor verticalmente */
+    transform: translateY(-50%);
+    /* Ajusta su posición para un centrado perfecto */
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Fondo semitransparente */
+    color: white;
+    border: none;
+    padding: 15px 15px;
+    cursor: pointer;
+    font-size: 2em;
+    font-weight: bold;
+    border-radius: 50%;
+    /* Botón circular */
+    transition: background-color 0.3s ease;
+    z-index: 1001;
+    /* Asegura que el botón esté encima de la imagen */
+}
+
+.modal-nav-btn:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+    /* Cambia de color al pasar el ratón */
+}
+
+.modal-nav-btn.prev {
+    left: 20px;
+    /* Posiciona el botón "Prev" a la izquierda */
+}
+
+.modal-nav-btn.next {
+    right: 20px;
+    /* Posiciona el botón "Next" a la derecha */
+}
+
+
+/* Es crucial que el contenedor de la imagen tenga posición relativa para que los botones se posicionen correctamente */
+
+.modal-content {
+    position: relative;
+    /* ... (mantén tus otros estilos para .modal-content aquí) ... */
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 90%;
+    max-width: 800px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+#caption {
+    margin: auto;
+    display: block;
+    width: 90%;
+    max-width: 800px;
+    text-align: center;
+    color: #ccc;
+    padding: 15px 0;
+    font-size: 1.1em;
+}
+
+.close-button {
+    position: absolute;
+    top: 20px;
+    right: 40px;
+    color: #f1f1f1;
+    font-size: 45px;
+    font-weight: bold;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.close-button:hover,
+.close-button:focus {
+    color: #aaa;
+    text-decoration: none;
+}
+
+
+/* --- Estilos del formulario de presupuesto (presupuesto.html) --- */
+
+#budgetForm {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    /* Espacio entre grupos de formulario */
+    padding: 20px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    background-color: #fdfdfd;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+#budgetForm h3 {
+    color: #34495e;
+    font-size: 1.8em;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #555;
+}
+
+.form-group input[type="text"],
+.form-group input[type="tel"],
+.form-group input[type="email"],
+.form-group input[type="number"],
+.form-group select {
+    width: calc(100% - 22px);
+    /* Ajuste para padding y borde */
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    /* Incluye padding y borde en el ancho total */
+    font-size: 1em;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-group input[type="text"]:focus,
+.form-group input[type="tel"]:focus,
+.form-group input[type="email"]:focus,
+.form-group input[type="number"]:focus,
+.form-group select:focus {
+    border-color: #3498db;
+    box-shadow: 0 0 8px rgba(52, 152, 219, 0.3);
+    outline: none;
+}
+
+.form-group input[type="checkbox"] {
+    margin-right: 8px;
+    transform: scale(1.2);
+    /* Aumenta el tamaño del checkbox */
+    vertical-align: middle;
+    /* Alinea con el texto */
+}
+
+.form-group small {
+    display: block;
+    margin-top: 5px;
+    color: #7f8c8d;
+    font-size: 0.9em;
+}
+
+.final-budget {
+    font-size: 1.8em;
+    font-weight: bold;
+    color: #27ae60;
+    /* Verde para el presupuesto final */
+    text-align: center;
+    margin-top: 30px;
+    padding: 15px;
+    border: 2px dashed #2ecc71;
+    /* Borde punteado */
+    border-radius: 8px;
+    background-color: #e8f8f5;
+    /* Fondo suave para el presupuesto */
+}
+
+
+/* Mensajes de error de validación */
+
+.error-message {
+    color: #e74c3c;
+    /* Rojo para errores */
+    font-size: 0.9em;
+    margin-top: 5px;
+    display: block;
+    font-weight: normal;
+}
+
+input.invalid,
+select.invalid {
+    border-color: #e74c3c;
+    /* Borde rojo para campos inválidos */
+    box-shadow: 0 0 8px rgba(231, 76, 60, 0.3);
+}
+
+
+/* Botones del formulario */
+
+.form-actions {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.form-actions button {
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1em;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#submitBtn {
+    background-color: #2ecc71;
+    /* Verde para enviar */
+    color: white;
+}
+
+#submitBtn:hover {
+    background-color: #27ae60;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+#resetBtn {
+    background-color: #e74c3c;
+    /* Rojo para restablecer */
+    color: white;
+}
+
+#resetBtn:hover {
+    background-color: #c0392b;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+
+/* Media Queries para Responsividad */
+
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.8em;
+    }
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+    nav ul li {
+        margin: 0;
+    }
+    main {
+        margin: 15px auto;
+        padding: 15px;
+    }
+    section {
+        padding: 15px;
+    }
+    section h2 {
+        font-size: 1.6em;
+    }
+    .form-group input[type="text"],
+    .form-group input[type="tel"],
+    .form-group input[type="email"],
+    .form-group input[type="number"],
+    .form-group select {
+        width: calc(100% - 20px);
+        /* Ajuste para pantallas más pequeñas */
+    }
+    .form-actions {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .form-actions button {
+        width: 100%;
+    }
+    .modal-content {
+        width: 95%;
+    }
+    .close-button {
+        top: 10px;
+        right: 20px;
+        font-size: 35px;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.5em;
+    }
+    nav ul {
+        gap: 8px;
+    }
+    nav ul li a {
+        font-size: 1em;
+        padding: 6px 10px;
+    }
+    .gallery-thumbnail {
+        width: 120px;
+        height: 80px;
+    }
+    .gallery-controls button {
+        padding: 10px 15px;
+        font-size: 0.9em;
+    }
+    .final-budget {
+        font-size: 1.5em;
+    }
+}
